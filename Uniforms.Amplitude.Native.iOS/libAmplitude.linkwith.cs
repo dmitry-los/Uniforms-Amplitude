@@ -1,4 +1,4 @@
+using System;
 using ObjCRuntime;
 
-[assembly: LinkWith ("libAmplitude.a", SmartLink = true, ForceLoad = true,
-    Frameworks = "Foundation", LinkerFlags = "-lsqlite3")]
+[assembly: LinkWith ("libAmplitude.a", LinkTarget.Simulator | LinkTarget.ArmV7, ForceLoad = true, LinkerFlags = "-lz -lsqlite3", IsCxx = true)]

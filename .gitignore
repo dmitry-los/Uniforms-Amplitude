@@ -1,6 +1,4 @@
 # Binary libs
-*.a
-*.jar
 
 # User-specific files
 Config.resx

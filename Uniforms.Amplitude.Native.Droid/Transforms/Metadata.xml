@@ -9,6 +9,12 @@
 
   <remove-node path="/api/package[starts-with(@name, 'okhttp3')]" />
   <remove-node path="/api/package[starts-with(@name, 'okio')]" />
+
+  <remove-node path="/api/package[@name='okhttp3']/class[@name='FormBody']" />
+  <remove-node path="/api/package[@name='okhttp3']/class[@name='OkHttpClient']" />
+  <remove-node path="/api/package[@name='okhttp3']/class[@name='Request']" />
+  <remove-node path="/api/package[@name='okhttp3']/class[@name='Response']" />
+
   <remove-node path="/api/package[@name='com.amplitude.security']" />
   <remove-node path="/api/package[@name='com.amplitude.api']/class[@name='PinnedAmplitudeClient']" />
   <remove-node path="/api/package[@name='com.amplitude.api']/class[@name='PinnedAmplitudeClient.SSLContextBuilder']" />
